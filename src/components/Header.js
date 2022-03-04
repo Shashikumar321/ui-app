@@ -1,9 +1,11 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 const Header = () => {
+    const history = useHistory();
 
-    return <div class="header-panel">
-        <h1>NightOWl</h1>
+    return <div className="app-header">
+        <a onClick={() =>history.push('/')}>Night Owl</a>
     </div>
 
 };
